@@ -4,7 +4,7 @@ var temp_off = 25; // Температура для выключения вен�
 
 // Определение правила
 defineRule("fan_control_by_temperature", {
-  whenChanged: "wb-w1/28-00000xxxxxxx",  // Датчик температуры (замените на ID вашего датчика)
+  whenChanged: "wb-msw-v3_21/Temperature",  // Датчик температуры на WB-MSW v3
   then: function (newValue, devName, cellName) {
     var temperature = parseFloat(newValue);  // Получаем текущее значение температуры
 
