@@ -7,10 +7,10 @@
 Пример правила типа whenChenged
 
 ```js
-defineRule("test_rule", { //имя правила test_rule
- whenChanged: "wb-gpio/A1_IN",
- then: function (newValue, devName, cellName) {
- dev["wb-mrm2-mini_2"]["Relay 1"] = newValue;
- }
+defineRule("test_rule", {
+  whenChanged: "wb-gpio/A1_IN",  // Когда изменяется значение на входе A1
+  then: function (newValue, devName, cellName) {
+    dev["wb-mrm2-mini_2"]["Relay 1"] = newValue;  // Передаем это значение на реле 1 устройства wb-mrm2-mini_2
+  }
 });
 ```
