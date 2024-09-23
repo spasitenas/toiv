@@ -5,8 +5,8 @@ var temperatureSensor = "wb-msw-v3_97/temperature";
 var fanRelay = "wb-gpio/Relay_1";
 
 // Установите пороговые значения температуры
-var temperatureOn = 30; // Температура, выше которой вентилятор включается
-var temperatureOff = 25; // Температура, ниже которой вентилятор выключается
+var temperatureOn = 10; // Температура, выше которой вентилятор включается
+var temperatureOff = 0; // Температура, ниже которой вентилятор выключается
 
 // Функция, которая выполняется при изменении температуры
 defineRule("FanControlByTemperature", {
