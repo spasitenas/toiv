@@ -1,5 +1,5 @@
 // Задайте здесь имя датчика температуры
-var temperatureSensor = "wb-msw-v3_97/temperature";
+var temperatureSensor = "wb-msw-v3_21/temperature";
 
 // Задайте здесь имя реле вентилятора
 var fanRelay = "wb_mr3_56_control/Relay 2";
