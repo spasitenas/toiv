@@ -2,7 +2,7 @@
 var temperatureSensor = "wb-msw-v3_97/temperature";
 
 // Задайте здесь имя реле вентилятора
-var fanRelay = "wb-gpio/Relay_1";
+var fanRelay = "wb_mr3_56_control/Relay 2";
 
 // Установите пороговые значения температуры
 var temperatureOn = 10; // Температура, выше которой вентилятор включается
