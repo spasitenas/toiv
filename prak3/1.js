@@ -14,12 +14,10 @@ defineRule("FanControlByTemperature", {
     log("Текущая температура: " + newValue + "°C");
 
     if (newValue >= temperatureOn) {
-      // Включаем вентилятор
       dev[fanRelay] = 1;
       log("Вентилятор включен");
     }
     else if (newValue <= temperatureOff) {
-      // Выключаем вентилятор
       dev[fanRelay] = 0;
       log("Вентилятор выключен");
     }
