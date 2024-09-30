@@ -1,3 +1,5 @@
+https://github.com/wirenboard/wb-rules
+
 ## Типы правил defineRule
 ### whenChanged
 Правило данного типа срабатывает при изменениях значений параметров или функций.
