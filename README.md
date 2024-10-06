@@ -1,6 +1,6 @@
 https://totp.danhersam.com/?key=AINOKZ5WANPBAVBW
 
-https://miro.com/app/board/uXjVLWpcDaE=/
+https://miro.com/app/board/uXjVLWpcDaE=
 
 ![image](https://github.com/user-attachments/assets/a0798067-656d-43b2-aa34-ea468240d96d)
 
