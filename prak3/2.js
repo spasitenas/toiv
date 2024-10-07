@@ -19,7 +19,7 @@ defineRule("ValveControlByTwoButtons", {
     // Проверяем, что обе кнопки сейчас нажаты и раньше не были нажаты одновременно
     if (currentButton25 && currentButton26 && !(prevButton25 && prevButton26)) {
       // Переключаем состояние шарового крана
-      dev[valveRelay] = dev[valveRelay] ? 0 : 1;
+      dev[valveRelay] = dev[valveRelay] ? true : false;
       log("Состояние шарового крана изменено: " + (dev[valveRelay] ? "Открыт" : "Закрыт"));
     }
 
