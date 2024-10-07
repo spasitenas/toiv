@@ -1,5 +1,5 @@
-var button25 = "wb-gpio/Input_25";
-var button26 = "wb-gpio/Input_26";
+var button25 = "wb-gpio/EXT1_R3A7";
+var button26 = "wb-gpio/EXT1_R3A8";
 
 // имя шарового крана
 var valveRelay = "wb-gpio/Relay_2";
