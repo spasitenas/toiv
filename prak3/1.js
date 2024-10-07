@@ -1,7 +1,7 @@
 var temperatureSensor = "wb-msw-v3_21/Temperature";
 
 // Задайте здесь имя реле вентилятора
-var fanRelay = "wb-mr3_56/K3";
+var fanRelay = "wb-mr3_56/K2";
 
 // Установите пороговые значения температуры
 var temperatureOn = 10; // Температура, выше которой вентилятор включается
@@ -14,11 +14,11 @@ defineRule("FanControlByTemperature", {
     log("Текущая температура: " + newValue + "°C");
 
     if (newValue >= temperatureOn) {
-      dev[fanRelay] = 1;
+      dev[fanRelay] = true;
       log("Вентилятор включен");
     }
     else if (newValue <= temperatureOff) {
-      dev[fanRelay] = 0;
+      dev[fanRelay] = false;
       log("Вентилятор выключен");
     }
   }
