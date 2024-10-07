@@ -1,3 +1,8 @@
+компьютерные сети терминальные сутройства (локальный и глобальный множество и 4 множество счетчики актуаторы 4 множества основных)
+
+
+
+
 ![image](https://github.com/user-attachments/assets/554fadea-4203-4302-b481-b3a527a21893)
 
 ![image](https://github.com/user-attachments/assets/e3675ce5-8f91-4556-8ce1-3322d9880e19)
