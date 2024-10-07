@@ -3,7 +3,7 @@ mosquitto_sub -h 192.168.2.24 -p 22 -u user -P 123123 -t "/devices/wb-msw-v3/con
 ```
 
 ```bash
-mosquitto_sub -t "/devices/wb-msw-v3/controls/+/on" -t "/devices/wb-ms-v2/controls/temperature" -v
+mosquitto_sub -t "/devices/wb-msw-v3/controls/+/on" -t "/devices/wb-ms-v2/controls/temperature" -v -p 1883
 ```
 
 Ошибка "Permission denied" указывает на то, что у вас нет достаточных прав для подключения к MQTT-брокеру или для подписки на указанные топики. Вот несколько шагов, которые вы можете предпринять для решения этой проблемы:
