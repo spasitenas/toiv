@@ -2,7 +2,7 @@ var button25 = "wb-gpio/EXT1_R3A7";
 var button26 = "wb-gpio/EXT1_R3A8";
 
 // имя шарового крана
-var valveRelay = "wb-gpio/Relay_2";
+var valveRelay = "wb-mwac_68/K1";
 
 // Переменные для хранения предыдущего состояния кнопок
 var prevButton25 = 0;
