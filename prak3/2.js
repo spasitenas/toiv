@@ -1,6 +1,11 @@
+function logWithTimestamp(message) {
+    console.log(`[${new Date().toISOString()}] ${message}`);
+}
+
+logWithTimestamp("Это сообщение с временной меткой");
+
 var button25 = "wb-gpio/EXT1_R3A7";
 var button26 = "wb-gpio/EXT1_R3A8";
-log(new Date().toLocaleString());
 
 // имя шарового крана
 var valveRelay = "wb-mwac_68/K1";
