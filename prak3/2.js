@@ -1,8 +1,4 @@
-function logWithTimestamp(message) {
-    console.log(`[${new Date().toISOString()}] ${message}`);
-}
-
-logWithTimestamp("Это сообщение с временной меткой");
+log("---------------- НАЧАЛО РАБОТЫ СКРИПТА --------------");
 
 var button25 = "wb-gpio/EXT1_R3A7";
 var button26 = "wb-gpio/EXT1_R3A8";
@@ -24,7 +20,7 @@ defineRule("ValveControlByTwoButtons", {
     // Проверяем, что обе кнопки сейчас нажаты и раньше не были нажаты одновременно
     if (currentButton25 && currentButton26 && !(prevButton25 && prevButton26)) {
       // Переключаем состояние шарового крана
-      dev[valveRelay] = dev[valveRelay] ? true : false;
+      dev[valveRelay] = dev[valveRelay] ? false : true;
       log("Состояние шарового крана изменено: " + (dev[valveRelay] ? "Открыт" : "Закрыт"));
     }
 
