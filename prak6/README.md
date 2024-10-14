@@ -100,6 +100,13 @@ mosquitto_pub -t "/devices/wb-gpio/controls/EXT1_R3A3/on" -m "1" -p 1883
 ```bash
  mosquitto_pub -t "/devices/wb-mr3_56/controls/K3/on" -m "1" -p 1883
  ```
+
+### Часть 4*. Сообщения MQTT с внешнего устройства
+ВНИМАНИЕ! Необходимо редактировать файл конфигурации, находящийся в домашней директории пользователя user (а не `/etc/mosquitto/mosquitto.conf`)!
+
+```bash
+ mosquitto_sub -v -t "/devices/power_status/controls/Vin" -i Test_client -p 1883
+ ``
  
  -------
 
