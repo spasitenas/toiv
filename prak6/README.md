@@ -47,19 +47,24 @@ home/outdoor/light
 ### Часть 2. Подписка на топик
 При помощи улиты mosquitto_sub подпишитесь на сообщения нескольких датчиков стенда, согласно варианту:
 
-1. Датчик движения устройства WB-MSW v.3 (5)
-2. Качество воздуха VOC устройства WB-MS v.2 (12)
+датчик температуры v3
+```bash
+mosquitto_sub -t "/devices/wb-msw-v3_21/controls/Temperature" -v  -p 1883
+```
 
 ```bash
 ssh user@192.168.2.24
 ```
 
+1. Датчик движения устройства WB-MSW v.3 (5)
 ```bash
-mosquitto_sub -h 192.168.2.24 -p 22 -u user -P 123123 -t "/devices/wb-msw-v3/controls/+/on" -t "/devices/wb-ms-v2/controls/temperature" -v
+mosquitto_sub -t "/devices/wb-msw-v3_21/controls/Max Motion" -t "/devices/wb-msw-v3_21/controls/Current Motion" -v -p 1883
 ```
 
+2. Датчик температуры устройства WB-MS v.2 (12)
+
 ```bash
-mosquitto_sub -t "/devices/wb-msw-v3/controls/+/on" -t "/devices/wb-ms-v2/controls/temperature" -v -p 1883
+mosquitto_sub -t "/devices/wb-ms_11/controls/Temperature" -v  -p 1883
 ```
 
 Пример получения сообщений в результате успешной подписки:
