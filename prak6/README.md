@@ -51,6 +51,10 @@ home/outdoor/light
 2. Качество воздуха VOC устройства WB-MS v.2 (12)
 
 ```bash
+ssh user@192.168.2.24
+```
+
+```bash
 mosquitto_sub -h 192.168.2.24 -p 22 -u user -P 123123 -t "/devices/wb-msw-v3/controls/+/on" -t "/devices/wb-ms-v2/controls/temperature" -v
 ```
 
