@@ -94,6 +94,10 @@ mosquitto_sub -t "/devices/wb-ms_11/controls/Temperature" -v  -p 1883
 2. Включите имитацию подачи воды
 
 ```bash
+mosquitto_pub -t "/devices/wb-gpio/controls/EXT1_R3A3/on" -m "1" -p 1883
+```
+
+```bash
  mosquitto_pub -t "/devices/wb-mr3_56/controls/K3/on" -m "1" -p 1883
  ```
  
